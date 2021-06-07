@@ -1,0 +1,44 @@
+body {
+  font-family: 'Lato', sans-serif; 
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.heading {
+  font-weight: bold;
+  font-size: 72;
+  line-height: 1.19;
+  text-transform: uppercase;
+}
+.title {
+  font-weight: 600;
+  font-size: 36;
+  line-height: 43;
+}
+.subtitle {
+  font-weight: bold;
+  font-size: 18;
+  line-height: 22;
+}
+.plain_text {
+  font-size: 14;
+  line-height: 140;
+}
+input {
+  height: 60;
+}
+.container {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-4 {
+  width: 33.33333%;
+}
+.header_section {
+  background-image: url(../images/Header_bg.jpg)
+}
