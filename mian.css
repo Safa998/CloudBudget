@@ -1,33 +1,59 @@
+*,
+*:after,
+*::before {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Lato', sans-serif; 
+  text-align: justify;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 button {
   border: none;
   background: none;
   cursor: pointer;
+  color: inherit;
 }
 .heading {
   font-weight: bold;
-  font-size: 72;
+  font-size: 72px;
   line-height: 1.19;
   text-transform: uppercase;
 }
 .title {
   font-weight: 600;
-  font-size: 36;
-  line-height: 43;
+  font-size: 36px;
+  line-height: 1.19;
 }
 .subtitle {
   font-weight: bold;
-  font-size: 18;
-  line-height: 22;
+  font-size: 18px;
+  line-height: 1.22;
 }
 .plain_text {
-  font-size: 14;
-  line-height: 140;
+  font-size: 14px;
+  line-height: 1.4;
 }
-input {
-  height: 60;
+input,
+select {
+  display: block;
+  height: 60px;
+  width: 100%;
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+input:focus {
+  background-color: rgb(153, 141, 141);
+}
+select {
+  appearance: none;
+  background: none;
 }
 .container {
   max-width: 1440px;
@@ -36,9 +62,203 @@ input {
   padding-left: 15px;
   padding-right: 15px;
 }
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-1 {
+  width: 8.33333%;
+}
+.col-2 {
+  width: 16.66666%;
+}
+.col-3 {
+  width: 25%;
+}
 .col-4 {
   width: 33.33333%;
 }
+.col-5 {
+  width: 41.66666%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33333%;
+}
+.col-8 {
+  width: 66.66666%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333%;
+}
+.col-11 {
+  width: 91.66666%
+}
+.col-12 {
+  width: 100%;
+}
+.offset-1 {
+  margin-left: 8.33333%;
+}
+.offset-2 {
+  margin-left: 16.66666%;
+}
+.offset-3 {
+  margin-left: 25%;
+}
+.offset-4 {
+  margin-left: 33.33333%;
+}
+.offset-5 {
+  margin-left: 41.66666%;
+}
+.offset-6 {
+  margin-left: 50%;
+}
+.offset-7 {
+  margin-left: 58.33333%;
+}
+.offset-8 {
+  margin-left: 66.66666%;
+}
+.offset-9 {
+  margin-left: 75%; 
+}
+.offset-10 {
+  margin-left: 83.33333%;
+}
+.offset-11 {
+  margin-left: 91.66666%
+}
+.offset-12 {
+  margin-left: 100%;
+}
+.page_header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 36px;
+  color: white;
+}
 .header_section {
-  background-image: url(../images/Header_bg.jpg)
+  padding-top: 260px;
+  padding-bottom: 180px;
+  background-image: url(../images/Header_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.text_center {
+  text-align: center;
+}
+.text_right {
+  text-align: right;
+}
+.in_white {
+  color: white;
+}
+.page_nav {
+  text-align: center;
+}
+.page_nav_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.page_nav_list_item {
+  display: inline-block;
+}
+.page_nav_list_link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.video_section {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.map {
+  background-color: #ED4C5C;
+}
+.features {
+  background-color: #FAFAFA;
+}
+.footer_section {
+  background-color: #FAFAFA;
+}
+.primary_button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.primary_button:hover {
+  background-color: rgb(211, 89, 89);
+}
+.primary_button:focus {
+  outline: none;
+  background-color: rgb(161, 70, 70);
+}
+.primary_button:active {
+  background-color: rgb(223, 31, 31);
+}
+.secondary_button {
+  color: #864f55;
+  width: 160px;
+  height: 60px;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+.secondary_button:hover {
+  background-color: rgb(153, 141, 141);
+}
+.secondary_button:focus {
+  outline: none;
+  background-color: rgb(161, 70, 70);
+}
+.secondary_button:active {
+  background-color: rgb(223, 31, 31);
+}
+.contact_button {
+  width: 160px;
+  height: 64.44px;
+  background: #ED4C5C;
+  border: 1.5px solid #ED4C5C;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.contact_button:hover {
+  background-color: rgb(211, 89, 89);
+}
+.contact_button:focus {
+  outline: none;
+  background-color: rgb(161, 70, 70);
+}
+.contact_button:active {
+  background-color: rgb(223, 31, 31);
+}
+.technology_span {
+  width: 117px;
+  height: 120px;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 120px;
+  color: rgba(16, 16, 16, 0.08);
 }
