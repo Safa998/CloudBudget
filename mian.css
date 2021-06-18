@@ -192,6 +192,17 @@ select {
   padding-top: 95px;
   padding-bottom: 95px;
 }
+.title_video_section {
+  height: 87px;
+  font-size: 35px;
+  line-height: 1.2;
+  margin-bottom: 56px;
+}
+.video_section_text {
+  height: 115px;
+  font-size: 16px;
+  line-height: 1.4;
+}
 .map {
   background-color: #ed4c5c;
 }
@@ -234,6 +245,7 @@ select {
   background-color: #df1f1f;
 }
 .contact_button {
+  margin-bottom: 73px;
   padding: 16.11px 40px 16.11px 40px;
   background: #ed4c5c;
   border: 1.5px solid #ed4c5c;
@@ -254,23 +266,38 @@ select {
   padding-top: 63px;
   padding-bottom: 104px;
 }
-.technology_list {
-  padding-top: 58px;
+.mb-58 {
+  margin-bottom: 58px;
 }
 .technology_span {
   display: block;
-  width: 117px;
-  height: 120px;
   font-weight: bold;
   font-size: 100px;
-  line-height: 1.2;
+  line-height: 1;
   color: rgba(16, 16, 16, 0.08);
 }
-.technoogy_item {
-  margin-top: -56px;
+.technology_list {
+  text-align: center;
+}
+.technology_subtitle {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.technology_text {
+  font-size: 14px;
+  line-height: 1.2;
+}
+.technology_item {
+  min-height: 80px;
+  margin-top: -50px;
+  margin-bottom: 8px;
 }
 .os_list {
   display: inline-block;
+  width: 70px;
+  height: 16px;
 }
 .video_wrap {
   position: relative;
@@ -295,4 +322,76 @@ select {
   position: absolute;
   right: 24.7px;
   top: 24.7px;
+}
+.features_wrap {
+  position: relative;
+  margin-top: -115px;
+  margin-left: 29px;
+  width: 293px;
+  height: 198px;
+  background: #fff;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+.features_link {
+  display: inline-block;
+  padding-bottom: 25px;
+  height: 18px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #ed4c5c;
+}
+.features_subtitle {
+  padding-top: 33px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.features_text {
+  padding-top: 20px;
+  height: 57px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.map {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 120px;
+}
+.map_title {
+  width: 445px;
+  height: 87px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+}
+.map_text {
+  width: 445px;
+  height: 87px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.map_text_wrap {
+  padding-top: 69px;
+  padding-left: 80px;
+}
+.user_contact_info {
+  padding-bottom: 24px;
+}
+.contact_span {
+  margin-top: -71px;
+}
+.contact_title {
+  margin-top: 125px;
+  height: 45.11px;
+  font-size: 36px;
+  line-height: 1.2;  
+}
+.contact_text {
+  height: 165.4px;
+  font-size: 16px;
+  line-height: 1.4;
 }
